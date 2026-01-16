@@ -1,0 +1,228 @@
+.rest{
+    background-color: orangered;
+    color: white;
+    text-align: center;
+    height: 90px;
+    padding-top: 50px;
+    gap: 15px;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-style: italic;
+}
+h5{
+    padding-top: 10px;
+}
+.navbar{
+    background-color: black;
+    color: white;
+    height: 0px;
+    text-decoration: none;
+    padding-bottom: 70px;
+    text-align: center;
+
+}
+#menu{
+    margin: 20px;
+    color: white;
+    text-decoration: none;
+     text-align: center;
+       position: relative;
+     top: 20px;
+    
+}
+#home{
+    margin: 20px;
+    color: white;
+    text-decoration: none;
+     text-align: center;
+     padding-top: 20px;
+     position: relative;
+     top: 20px;
+    
+}
+#about{
+    margin: 20px;
+    color: white;
+    text-decoration: none;
+     text-align: center;
+     position: relative;
+     top: 20px;
+}
+#contact{
+    margin: 20px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+      position: relative;
+     top: 20px;
+}
+
+    
+img{
+    height: 130px;
+    text-align: center;
+    padding-top: 20px;
+
+   
+}    
+.cheese{
+    /* margin-left: 20px; */
+    margin-top: 20px;
+    border: 1px white;
+    background-color: beige;
+    width: 250px;
+    text-align: center;
+    height: 300px;
+    line-height: 2rem;
+    border-radius: 20px;
+}
+#img{
+    background-color: orangered;
+    border-radius: 4px;
+}
+
+
+.pizza{
+    margin-left: 20px;
+    margin-top: 20px;
+    border: 1px white;
+    background-color: beige;
+    width: 250px;
+    text-align: center;
+    height: 300px;
+    line-height: 2rem;
+    border-radius: 20px;
+}
+#img1{
+    background-color: orangered;
+    border-radius: 4px;
+}
+.pasta{
+    margin-left: 20px;
+    margin-top: 20px;
+    border: 1px white;
+    background-color: beige;
+    width: 250px;
+    text-align: center;
+    height: 300px;
+    line-height: 2rem;
+    border-radius: 20px;
+    flex-grow: 5;
+}
+#img2{
+    background-color: orangered;
+    border-radius: 4px;
+    
+}
+
+
+.veg{
+    margin-left: 20px;
+    margin-top: 20px;
+    border: 1px white;
+    background-color: beige;
+    width: 250px;
+    text-align: center;
+    height: 300px;
+    line-height: 2rem;
+    border-radius: 20px;
+}
+#img3{
+    background-color: orangered;
+    border-radius: 4px;
+    
+}
+
+
+.jamun{
+    margin-left: 20px;
+    margin-top: 20px;
+    border: 1px white;
+    background-color: beige;
+    width: 250px;
+    text-align: center;
+    height: 300px;
+    line-height: 2rem;
+    border-radius: 20px;
+}
+#img4{
+    background-color: orangered;
+    border-radius: 4px;
+    
+}
+.ice{
+    margin-left: 20px;
+    margin-top: 20px;
+    border: 1px white;
+    background-color: beige;
+    width: 250px;
+    text-align: center;
+    height: 300px;
+    line-height: 2rem;
+    border-radius: 20px;
+}
+#img5{
+    background-color: orangered;
+    border-radius: 4px;
+    
+}
+.container{
+display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+ 
+}
+.footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 80px;
+    margin-top: 40px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.div{
+    padding-top: 20px;
+}
+.i{
+    background-color: #850eed;
+}
+button{
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    background-color: orange;
+    font-weight: bold;
+
+}
+#img2{
+     padding: 1rem 2rem;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    background-color: orange;
+    font-weight: bold;
+}
+#img3{
+      padding: 1rem 2rem;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    background-color: orange;
+    font-weight: bold;
+}
+#img4{
+     padding: 1rem 2rem;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    background-color: orange;
+    font-weight: bold;
+}
+#img5{
+      padding: 1rem 2rem;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    background-color: orange;
+    font-weight: bold;
+}

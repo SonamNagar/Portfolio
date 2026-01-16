@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index3.css">
+ <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+<link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+
+
+</head>
+<body>
+
+     <div class="rest">
+<h1> <i id="i"class="ri-service-bell-line"></i>TastyBites Restaurant</h1>
+<h5>Order your favourite food online</h5>
+    </div>
+    <div class="navbar">
+        
+        <a href="#" id="home">Home</a>
+        <a href="#" id="menu">Menu</a>
+        <a href="#" id="about">About</a>
+        <a href="#contact" id="contact">Contact</a>
+    </div>
+   
+<div class="container">
+<div class="cheese">
+ <img src="https://www.sargento.com/assets/Uploads/Recipe/Image/cheddarbaconcheeseburger__FocusFillWyIwLjAwIiwiMC4wMCIsODAwLDQ3OF0_CompressedW10.jpg" alt="">
+    <div><b>Cheese burger</b></div>
+    <div>₹120</div>
+    <div> <a href="details.html?name=Cheese Burger&price=120
+&img=https://www.sargento.com/assets/Uploads/Recipe/Image/cheddarbaconcheeseburger__FocusFillWyIwLjAwIiwiMC4wMCIsODAwLDQ3OF0_CompressedW10.jpg
+&desc=Juicy cheese burger">
+  <button>Order Now</button>
+</a></div>
+
+</div>
+
+
+<div class="pizza">
+ <img src="https://images.raasakarts.com/insecure/fit/1000/1000/ce/0/plain/https://rasakart-assets.s3.ap-south-1.amazonaws.com/3fa229/prods/zNu1s26lFpCncbdkgBxyLDMMXahKpDFySpnYR6je.jpg@webp" alt="">
+    <div><b>Veg Pizza</b></div>
+    <div>₹180</div>
+    <div>  <a href="details.html?name=Veg Pizza&price=180
+&img=https://images.raasakarts.com/insecure/fit/1000/1000/ce/0/plain/https://rasakart-assets.s3.ap-south-1.amazonaws.com/3fa229/prods/zNu1s26lFpCncbdkgBxyLDMMXahKpDFySpnYR6je.jpg@webp
+&desc=Cheesy veg pizza">
+  <button>Order Now</button>
+</a>
+</div>
+</div>
+
+
+
+<div class="pasta">
+ <img src="https://www.funfoodfrolic.com/wp-content/uploads/2020/03/White-Pasta-Thumbnail-500x500.jpg" alt="">
+    <div><b>White Sauce Pasta</b></div>
+    <div>₹160</div>
+    <div><button id="img2">Order Now</button></div>
+</div>
+
+
+
+<div class="veg">
+ <img src="https://hotelbeachgarden.com/wp-content/uploads/2024/12/Veg-Szechuan-Fried-Noodles.webp" alt="">
+    <div><b>Veg Noodles</b></div>
+    <div>₹140</div>
+    <div><button id="img3">Order Now</button></div>
+</div>
+
+
+
+<div class="jamun">
+ <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTrkSTYkhjRV2wggrSj3W1q_RdzdJIA8aT2w&s" alt="">
+    <div><b>Gulab Jamun</b></div>
+    <div>₹80</div>
+    <div><button id="img4">Order Now</button></div>
+</div>
+
+
+
+<div class="ice">
+ <img src="https://www.southernliving.com/thmb/EBBY00OUG-AgOn3N1lANR0JkaFI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Strawberry_Shortcake_IceCream_010-0820b2a72950463999a5ce1723c12c2c.jpg" alt="">
+    <div><b>Ice Cream</b></div>
+    <div>₹90</div>
+    <div><button id="img5">Order Now</button></div>
+</div>
+
+
+</div>
+   
+   
+<div class="footer">
+<div class="div" id="contact">
+<div >
+    <i class="ri-phone-fill"></i> +919876543210
+</div>
+   |Varanasi
+  <div> &#169 2025 TastyBites.All rights reserved.
+    </div>
+    
+    
+</div>
+
+
+</div>
+   
+
+
+<script>
+  function orderNow(name, price, img, desc){
+    const url = `details.html?name=${encodeURIComponent(name)}
+    &price=${price}
+    &img=${encodeURIComponent(img)}
+    &desc=${encodeURIComponent(desc)}`;
+    window.location.href = url;
+  }
+
+  document.getElementById("img2").onclick = () =>
+    orderNow("White Sauce Pasta",160,
+    "https://www.funfoodfrolic.com/wp-content/uploads/2020/03/White-Pasta-Thumbnail-500x500.jpg",
+    "Creamy white sauce pasta");
+
+  document.getElementById("img3").onclick = () =>
+    orderNow("Veg Noodles",140,
+    "https://hotelbeachgarden.com/wp-content/uploads/2024/12/Veg-Szechuan-Fried-Noodles.webp",
+    "Spicy veg noodles");
+
+  document.getElementById("img4").onclick = () =>
+    orderNow("Gulab Jamun",80,
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTrkSTYkhjRV2wggrSj3W1q_RdzdJIA8aT2w&s",
+    "Sweet gulab jamun");
+
+  document.getElementById("img5").onclick = () =>
+    orderNow("Ice Cream",90,
+    "https://www.southernliving.com/thmb/EBBY00OUG-AgOn3N1lANR0JkaFI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Strawberry_Shortcake_IceCream_010-0820b2a72950463999a5ce1723c12c2c.jpg",
+    "Delicious ice cream");
+</script>
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+</body>
+</html>

@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destiny Cafe Menu</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .boxtitle{
+            text-align: center;
+        background: linear-gradient();
+        color: white;
+        background-color: transparent;
+        }
+        h1{
+            font-weight: 900;
+            margin-bottom: 0.470rem; 
+            text-decoration:underline;
+            color: rgb(10, 233, 233);
+            text-shadow: 1px 1px 20px ;
+
+        }
+        footer{
+    margin-top: 3rem;
+    background-color: rgb(20, 22, 22);
+    color: white;
+    padding: 2rem 1rem;
+    box-shadow: 0 0 10px white;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+    text-align: center;
+}
+
+.footer-box h3{
+    color: rgb(10, 233, 233);
+    margin-bottom: 0.5rem;
+    text-decoration: underline;
+}
+
+.footer-box p{
+    font-size: 0.9rem;
+    color: aqua;
+}
+
+.footer-bottom{
+    margin-top: 1.5rem;
+    text-align: center;
+    font-size: 0.85rem;
+    color: gray;
+}
+
+        body{
+            height: 100vh;
+            width: 100vw;
+        
+
+background-color: black;
+        }
+        .container{
+            height: 300px;
+            width: 100%;
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        
+            gap: 3rem;
+            margin-top: 2rem;
+            border-style: groove;
+   
+      background-color: rgb(25, 28, 28);
+      border-radius: 20px;
+      border: 1px solid rgb(87, 91, 91);
+      box-shadow: 0 0 10px white;
+
+        }
+                .leftbox{
+                    display: flex;
+                    flex-direction: column;
+                    color: white;
+                    gap: 1rem;
+                }
+                .rightbox{
+                    display: flex;
+                    flex-direction: column;
+                    color: white;
+                    gap: 1rem;
+                    
+                }
+                .pastacontainer{
+                          border-radius: 20px;
+      border: 1px solid rgb(87, 91, 91);
+                   height: 300px;
+            width: 100%;
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        
+            gap: 3rem;
+            margin-top: 2rem;
+      background-color: rgb(25, 28, 28);
+         box-shadow: 0 0 10px white;
+
+                }
+                /* ===== Responsive Footer ===== */
+
+/* Tablet */
+@media (max-width: 768px) {
+    .footer-container{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-box{
+        width: 100%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    footer{
+        padding: 1.5rem 0.5rem;
+    }
+
+    .footer-box h3{
+        font-size: 1.1rem;
+    }
+
+    .footer-box p{
+        font-size: 0.85rem;
+    }
+
+    .footer-bottom{
+        font-size: 0.75rem;
+    }
+}
+
+              
+                 .leftbox{
+                    display: flex;
+                    flex-direction: column;
+                    color: white;
+                }
+                .rightbox{
+                    display: flex;
+                    flex-direction: column;
+                    color: white;
+                }
+                .sandwith{
+                      background-color: rgb(25, 28, 28);
+                     height: 700px;
+            width: 100%;
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        position: relative;
+   border-radius: 20px;
+      border: 1px solid rgb(87, 91, 91);
+         
+                box-shadow: 0 0 10px white;
+                }
+                .footer{
+                    margin-top: 1rem;
+                    color: white;
+                    text-align: center;
+                }
+
+                .maggi{
+
+                            height: 400px;
+            width: 100%;
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        
+                box-shadow: 0 0 10px white;
+            gap: 4rem;
+            margin-top: 9rem;
+               background-color: rgb(25, 28, 28);
+                  border-radius: 20px;
+      border: 1px solid rgb(87, 91, 91);
+                }
+                .rightboxw{
+                    gap: 2rem;
+                }
+                .southbox{
+                         background-color: rgb(25, 28, 28);
+                                  height: 300px;
+            width: 100%;
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        
+            gap: 3rem;
+            margin-top: 4rem;
+  box-shadow: 0 0 10px white;
+                }
+                .menu{
+            color: white;
+            text-align: center;
+            margin-top: 1rem;
+             background-color: rgb(25, 28, 28);
+       box-shadow: 0 0 10px white;
+                }
+                .sunday{
+                    
+                    color: white;
+                    display: flex;
+                    justify-content: space-around;
+                    flex-direction: column;
+                    
+                        background-color: rgb(25, 28, 28);
+        
+                }
+                
+                .monday{
+                    color: white;
+                    display: flex;
+                    justify-content: space-around;
+                      margin-top: 1rem;
+                        background-color: rgb(25, 28, 28);
+        
+                }
+                .tuesday{
+                    color: white;
+                    display: flex;
+                    justify-content: space-around;
+                      margin-top: 1rem;
+                        background-color: rgb(25, 28, 28);
+                }
+                .veg{
+                    color: white;
+                      display: flex;
+                    justify-content: space-around;
+                        margin-top: 1rem;
+                           background-color: rgb(25, 28, 28);
+                }
+                .daal{
+                    display: flex;
+                     color: white;
+                      display: flex;
+                    justify-content: space-around;
+                     background-color: rgb(25, 28, 28);
+                        margin-top: 1rem;
+                }
+                .SEV{
+                      display: flex;
+                     color: white;
+                      display: flex;
+                    justify-content: space-around;
+                        margin-top: 1rem;
+                          background-color: rgb(25, 28, 28);
+                }
+                .biryani{
+                             color: white;
+                      display: flex;
+                    justify-content: space-around;
+                         margin-top: 1rem;
+                              background-color: rgb(25, 28, 28);
+                }
+                .rightboxsand{
+                    color: white;
+                    gap: 2rem;
+                    padding-top: 3rem;
+                    height: 400px;
+                }
+                h2{
+                    color: white;
+                }
+                .utpam{
+         color: white;
+                      display: flex;
+                    justify-content: space-around;
+                    margin-top: 1rem;
+                     background-color: rgb(25, 28, 28);
+                }
+                .sand{
+                    color: black;
+                    display: flex; 
+                     box-shadow: 0 0 10px white;
+                         justify-content: space-around;
+                         align-items: center;
+                         height: 300px;
+                         width: 100%;
+                         background-color: rgb(25, 28, 28);
+                    padding-top: 9rem;
+                    margin-top: 2rem; 
+                         background-color: rgb(25, 28, 28);
+                  border-radius: 20px;
+                    
+                }
+                .choc{
+                    height: 270px;
+                    width: 400px;
+                    color: white;
+                    border-radius: 20px;
+                   
+                }
+                .leftboxcho{
+                    display: flex;
+                    flex-direction: column;
+                        height: 400px;
+                         width: 500px;
+                       color: white;
+                       padding-left: 1rem;
+                       gap: 1rem;
+                
+                }
+                .rightboxcho{
+                      display: flex;
+                    flex-direction: column;
+                        height: 400px;
+                         width: 500px;
+                }
+                .rightboxbites{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+                    position: relative;
+                    bottom: 100px;
+               
+                    
+                }
+                .rightboxpizza{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                position: relative;
+                bottom:40px;
+                right:240px;
+                    gap: 1rem;
+                    margin-bottom: 4rem;
+                    height: 200px;
+
+                    
+                   
+                }
+                .title{
+                    font-size: small;
+                    font-style: normal;
+                    text-shadow: 0 0 10px;
+                }
+                .tea{
+                    font-size: 1.6rem;
+                    font-weight: 900;
+                    color: rgb(210, 190, 11);
+                    font-style: initial;
+                    text-decoration: underline;
+                }
+                .cafe{
+                    text-align: center;
+                    margin-top: 2rem;
+                }
+                .span{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+                    font-size: 0.888rem;
+                    font-weight: 900;
+                    font: 1em sans-serif;
+                    color: aqua;
+                   
+
+                }
+                .burger{
+                      gap: 1rem;
+                    font-size: 0.888rem;
+                    font-weight: 900;
+                    font: 1em sans-serif;
+                    color: aqua;
+                }
+                .white{
+                    font-size: large;
+                    color: orange;
+                    font-weight: bold;
+                }
+                .leftboxone{
+                    color: white;
+                    position: relative;
+                    bottom: 130px;
+                    gap: 2rem;
+                    display: flex;
+                    flex-direction: column;
+                    
+                }
+                .rightboxpizza{
+                    
+                }
+                .menu{
+                          font-size: 1.rem;
+                    font-weight: 900;
+                    color: rgb(252, 75, 11);
+                    font-style: initial;
+                    text-decoration: underline;
+                }
+    </style>
+</head>
+<body>
+    <div class="boxtitle">
+        <h1>DESTINY CAFE MENU</h1>
+        <P class="title">Where Every Bite Is a Step Towards Yout Destiny!</P>
+    </div> <br>
+
+<hr style="width: 100%; height: 0.399rem; background-color: cadetblue;box-shadow: 4px 3px 10px ;">
+<div class="container">
+<div class="leftbox">
+
+ <h3 class="tea">TEA & COFFEE</h3>
+<div class="span">
+     <SPAN class="burger">Tea ................................................₹10</SPAN>
+  <SPAN class="burger">Coffee ............................................₹20</SPAN>
+  <span class="burger">Cold Coffee ....................................₹50</span>
+</div>
+
+</div>
+<div class="rightbox">
+ <h3 class="tea">BURGERS</h3>
+ <SPAN class="white">Veg Burger ........................................................₹40</SPAN>
+ <span class="burger">A classic vegetarian burger for the burger lovers.</span>
+ <span class="white">Veg Cheese Burger .............................................₹50</span>
+ <span class="burger">A delicious burger topped with melted cheese.</span>
+</div>
+</div>
+
+
+<div class="pastacontainer">
+    <div class="leftbox">
+            <h3 class="tea">PASTA</h3>
+            <h4 class="white">White Cheese Pasta.............₹65</h4>
+            <p class="burger">A creamy delight with rich white cheese and herbs.</p>
+        <h4 class="white">Red Sauce Pasta..................₹60</h4>
+        <span class="burger">Tossed in our homemade tangy red sauce.</span>
+        <h4 class="white">Makhani Pasta......................₹50</h4>
+        <span class="burger">Pasta enveloped in a velvety makhani sauce.</span>
+    </div>
+    <div class="rightbox">
+            <H3 class="tea">SHARKES</H3>
+            <H4 class="white">Oreo shake ................₹60</H4>
+            <span class="burger">A delicious blend of creamy vanilla and oreo crumbles.</span>
+            <h4 class="white">Kitkat Shake....................₹60</h4>
+            <span class="burger">Rich and indulgent,perfect for chocolate lovers.</span>
+            <h4 class="white">Cadbury Shake..............................₹60</h4>
+            <span class="burger">Creamy and chocolaty, this shake is pure bliss!</span>
+
+    </div>
+</div>
+   <BR><BR>
+    <div class="sandwith">
+      <div class="leftboxone">
+       <h3 class="tea">SANDWICHES</h3>
+       <H4 class="white">Grilled Vegetable Sandwich ..........₹50</H4>
+       <span class="burger">Fresh grilled Vegetables served on toasted bread.</span>
+       <h4 class="white">Corn Cheese Sandwich...................₹60</h4>
+       <span class="burger ">A hearty sandwich filled with sweet corn and melted cheese</span>
+      </div>
+
+        <div class="rightboxsand">
+            <div class="rightboxbites">
+                
+                    <H3 class="tea">BITES</H3>
+       <H4 class="white">plain Fries ..........₹40</H4>
+       <span class="burger">Crispy and golden, the perfect snack!</span>
+       <h4 class="white">Peri Peri Fries...................₹50</h4>
+       <span class="burger">Spiced up for those who like a kick!</span>
+       <h4 class="white">Cheese Peri Peri Fries................₹60</h4>
+       <p>Topped with melted cheese and peri peri sasoning.</p>
+                
+                
+            </div><br>
+            <br>
+            <div class="rightboxpizza">
+             <h3 class="tea">pizza</h3>
+             <h4 class="white">Vegetable Pizza.........................₹60</h4>
+             <P class="burger">A delightful mix of fresh veggies on a cheesy base.</P>
+             <h4 class="white">Sweet Corn Cheese Pizza .................₹70</h4>
+             <p class="burger">A cheesy delight with a generous layer of sweet corn.</p>
+
+             <h4 class="white">Double Cheese Pizza ............₹80</h4>
+             <p class="burger">For cheese lovers,this is a slice of heaven!</p>
+            </div>
+        </div>
+
+    </div>
+
+<div class="maggi">
+    <div class="leftbox">
+          <h3 class="tea">MAGGI</h3>
+          <H4 class="white">Plain Maggi .............₹30</H4>
+          <p class="burger">Classic indian instant noodles cooked to perfection.</p>
+          <h4 class="white">Double Masala ......................₹40</h4>
+          <p class="burger">Spiced up with double the flavor!</p>
+          <h4 class="white">Cheese Maggi ..................₹50</h4>
+          <p class="burger">Creamy cheese elevating the classic Maggi experience.</p>
+          <h4 class="white">Vegetable Cheese Maggi ...................₹60</h4>
+          <p class="burger">Loaded with veggies and gooey cheese.</p>
+    </div>
+    <div class="rightbox">
+       <div class="rightboxe">
+          <H3 class="tea">PARATHAS</H3>
+         <H4 class="white">Aloo ke parathe ..............₹20</H4>
+         <p class="burger">Flaky,stuffed with spiced potatoes , and served with chutney.</p>
+       </div>
+       <div class="rightboxw">
+        <h3 class="tea">WAFFLES</h3>
+        <H4 class="white">Chocolate Waffle ............₹50</H4>
+        <p class="burger">A warm waffle drizzled with rich chocolate sauce.</p>
+        <h4 class="white">White chocolate Waffle...............₹50</h4>
+        <p class="burger">Decadent and sweet, perfect for dessert lovers.</p>
+        <h4 class="white">Double chocolate Waffle ...........₹60</h4>
+        <p class="burger">Ultimate  indulgence with chocolate in every bite!</p>
+       </div>
+    </div>
+
+
+
+</div>
+
+ <div class="southbox">
+    <div class="rightbox">
+       <h3 class="tea">SOUTH INDIAN</h3>
+       <H4 class="white">Uttapam ..........₹40</H4>
+    <p class="burger">A fluffy pancake topped with fresh Vegetable.</p>
+    <h4 class="white">Upma ................₹40</h4>
+    <p  class="burger">A flavorful south indian breakfast made with semolina.</p>
+    </div>
+    <br><br><br>
+    <div class="leftbox">
+    
+         <h3 class="tea">RICE</h3>
+         <H4 class="white">Fried Rice ..................₹40</H4>
+         <p class="burger">Stir-fried rice with mixed Vegetables and spices.</p>
+    </div>
+ </div>
+
+ 
+<div class="footer">
+    <p class="burger">Thank you for choosing DESTINY CAFE! We hope you enjoy your meal.</p>
+</div>
+    <h2 class="menu">MENU</h2>
+
+  
+      <hr style="width: 100%; height: 0.3rem; background-color: rgb(129, 104, 104); border-radius: 40px;">
+     <div class="veg">
+        <div class="TUESDAY">
+          <h2 class="tea">MONDAY</h2>
+          <P class="burger">paneer Special</P>
+        </div>
+        <div class="price">
+            <b class="burger">₹70</b>
+        </div>
+        
+    </div>
+</div>
+
+
+
+   <div class="veg">
+        <div class="TUESDAY">
+          <h2 class="tea">TUESDAY</h2>
+          <P class="burger">Mix veg</P>
+        </div>
+        <div class="price">
+            <b class="burger">₹60</b>
+        </div>
+        
+    </div>
+</div>
+
+
+  <div class="daal">
+        <div class="WEDNESDAY">
+          <h2 class="tea">WEDNESDAY</h2>
+          <P class="burger">Daal chawal</P>
+        </div>
+        <div class="price">
+            <b class="burger">₹50</b>
+        </div>
+        
+    </div>
+</div>
+
+
+
+  <div class="SEV">
+        <div class="THURSDAY">
+          <h2 class="tea">THURSDAY</h2>
+          <P class="burger">Sev Tamatar</P>
+        </div>
+        <div class="price">
+            <b class="burger">₹60</b>
+        </div>
+        
+    </div>
+</div>
+
+ <div class="SEV">
+        <div class="FRIDAY">
+          <h2 class="tea">FRIDAY</h2>
+          <P class="burger">Dum aalu</P>
+        </div>
+        <div class="price">
+            <b class="burger">₹40</b>
+        </div>
+        
+    </div>
+</div>
+
+ <div class="biryani">
+        <div class="FRIDAY">
+          <h2 class="tea">SATURDAY</h2>
+          <P class="burger">Veg Biryani</P>
+        </div>
+        <div class="price">
+            <b class="burger">₹50</b>
+        </div>
+        
+    </div>
+</div>
+
+
+ <div class="utpam">
+        <div class="sunday">
+          <h2 class="tea">SUNDAY</h2>
+          <P class="burger">Veg Utpam</P>
+        </div>
+        <div class="price">
+            <b class="burger">₹40</b>
+        </div>
+        
+    </div>
+</div>
+
+
+
+
+<h2 class="cafe">DESTINY CAFE MENU</h2>
+<div class="sand">
+    <div class="leftboxcho">
+             <h2 class="tea">SANDWICHES</h2>
+             <H4 class="white">chocolate Sandwich</H4>
+             <p class="burger">A delightful combination of chocolate spread and bread.</p>
+             <p class="burger">₹50</p>
+    </div>
+    <div class="rightboxcho">
+        <img class="choc" src="https://www.indianhealthyrecipes.com/wp-content/uploads/2022/05/chocolate-sandwich-recipe.jpg" alt="">
+    </div>
+</div>
+
+
+<div class="sand">
+    <div class="leftboxcho">
+             <h2 class="tea">Aalu Sandwich</h2>
+            
+             <p class="burger">A savory potato filling with spices, sandwiched between bread.</p>
+             <p class="burger">₹50</p>
+    </div>
+    <div class="rightboxcho">
+        <img class="choc" src="https://i.ytimg.com/vi/wbc62-6Gq9I/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDnYi1mbiEwGyXGeO22bi5HOW3a_g" alt="">
+    </div>
+</div>
+
+
+<div class="sand">
+    <div class="leftboxcho">
+             <h2 class="tea">Open  Cheese Sandwich </h2>
+            
+             <p class="burger">A classic open-faced sandwich with melted cheese.</p>
+             <p class="burger">₹50</p>
+    </div>
+    <div class="rightboxcho">
+        <img class="choc" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT6R2YWehOJb3Tkgv4Q7YJ7kdXTpKETaqDgQ&s" alt="">
+    </div>
+</div>
+<footer>
+    <div class="footer-container">
+        <div class="footer-box">
+            <h3>DESTINY CAFE</h3>
+            <p>Where Every Bite Is a Step Towards Your Destiny</p>
+        </div>
+
+        <div class="footer-box">
+            <h3>Contact Us</h3>
+            <p>📞 +91 98765 43210</p>
+          
+        </div>
+
+        <div class="footer-box">
+            <h3>Opening Hours</h3>
+            <p>Mon – Sat: 9 AM – 10 PM</p>
+            <p>Sunday: 9 AM – 8 PM</p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Destiny Cafe | All Rights Reserved</p>
+    </div>
+</footer>
+
+</body>
+</html>

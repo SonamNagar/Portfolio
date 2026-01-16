@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calclator</title>
+    <link rel="stylesheet" href="calc1.css">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(gray,teal);
+}
+.calc{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    width: 20rem;
+    border-radius: 1rem;
+    background-color: black;
+}
+.btnContainer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 0.5rem;
+ 
+
+}
+input[type = 'button']{
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: none;
+  font-size: 1.5rem;
+}
+.op {
+    background-color: rgb(244, 162, 9);
+  
+
+}
+.function{
+    background-color: cadetblue;
+    color: wheat;
+}
+.num{
+    background-color: rgb(145, 137, 137);
+    color: white;
+}
+.num:hover{
+    background-color: transparent;
+    font-size: 3rem;
+    text-shadow: 2px 2px 20px red;
+    box-shadow: inset 0px 0px 20px ;
+  
+}
+#display{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 3rem;
+    color: white;
+    text-align: right;
+    padding: 1rem;
+}
+input[value = '0']{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: auto !important;
+   border-radius: 2rem !important;
+}
+    </style>
+</head>
+<body>
+    <div class="calc">
+        <input type="text" id="display">
+        <div class="btnContainer">
+          <input type="button"class="function"  value="AC" onclick="allClear()">
+        <input type="button" class="function" value="DEL" onclick="del()">
+            <input type="button" class="function" value="SQ" onclick="sq()">
+             <input type="button" class="op btns"   value="/">
+ 
+                 <input type="button" class="btns num"  value="7">
+                 <input type="button"  class="btns num" value="8">
+                 <input type="button"  class="btns num" value="9">
+                 <input type="button"class="op btns"   value="*">
+
+                <input type="button" class="btns num"  value="4">
+                <input type="button"  class="btns num"  value="5">
+                <input type="button"  class="btns num"  value="6">
+                <input type="button" class="op btns"  value="-">
+
+            <input type="button" class="btns num"  value="1">
+            <input type="button" class="btns num"   value="2">
+            <input type="button"  class="btns num"  value="3">
+            <input type="button" class="op btns"  value="+">
+
+            <input type="button" class="btns num"   value="0">
+           <input type="button"   class="btns num" value=".">
+            <input type="button" class="op" value = "=" onclick="equal()">
+        
+        </div>
+    </div>
+   <script>
+  let btns = document.querySelectorAll('.btns')
+console.log(btns)
+let display = document.getElementById('display')
+console.log(display)
+
+btns.forEach((btn)=>{
+    btn.addEventListener('click',()=>{
+        display.value += btn.value;
+    })
+})
+
+let equal = ()=>
+    display.value = eval(display.value)
+
+
+let allClear = ()=>{
+    display.value =''
+}
+let sq = ()=>{
+    display.value = display.value**2
+}
+let del =()=>{
+    display.value = display.value.slice(0,-1)
+}
+
+   </script>
+
+</body>
+</html>
