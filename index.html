@@ -964,22 +964,144 @@ background: #0F172A;
   background: #0ea5e9;
   transform: scale(1.05);
 }
+/* About Heading */
+#about {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 50px 0 30px;
+  color: #fff;
+}
 
-/* 📱 Mobile Responsive */
+/* Main Container */
+.containerone {
+  width: 100%;
+  display: flex;
+  gap: 40px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Left Box */
+.leftobx {
+  flex: 1;
+}
+
+.about {
+  background: #0f172a;
+  padding: 25px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.about img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 14px;
+  object-fit: cover;
+}
+
+/* Skill Buttons */
+.skill-btns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.skill-btns button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 25px;
+  background: #38bdf8;
+  color: #020617;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.skill-btns button:hover {
+  background: #0ea5e9;
+  transform: scale(1.05);
+}
+
+/* Right Box */
+.rightboxone {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.me {
+  background: #020617;
+  padding: 30px;
+  border-radius: 16px;
+  color: #cbd5f5;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.me p {
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* Links */
+.about-links {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.sona {
+  text-decoration: none;
+  padding: 10px 22px;
+  border-radius: 30px;
+  background: #38bdf8;
+  color: #020617;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.sona:hover {
+  background: #0ea5e9;
+}
+
+/* 📱 Mobile */
 @media (max-width: 768px) {
-  .about {
+  .containerone {
     flex-direction: column;
-    text-align: center;
+    gap: 30px;
+  }
+
+  #about {
+    font-size: 2rem;
   }
 
   .about img {
-    width: 100%;
+    max-width: 100%;
   }
 
-  .skills {
+  .about-links {
     justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .me {
+    text-align: center;
   }
 }
+
+/* 💻 Large Screens */
+@media (min-width: 1024px) {
+  .me p {
+    font-size: 1.05rem;
+  }
+}
+
 
 </style>
 
