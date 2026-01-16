@@ -4,7 +4,7 @@
    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href= "index2.css">
   <link
   rel="stylesheet"
@@ -904,6 +904,83 @@ background: #0F172A;
     flex-direction:column;
   }
 }
+/* About section */
+#about {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 40px 0;
+  color: #fff;
+}
+
+.containerone {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.leftbox {
+  width: 100%;
+  max-width: 900px;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background: #0f172a;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* Image */
+.about img {
+  width: 45%;
+  max-width: 350px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* Skills buttons */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skills button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 25px;
+  background: #38bdf8;
+  color: #020617;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.skills button:hover {
+  background: #0ea5e9;
+  transform: scale(1.05);
+}
+
+/* 📱 Mobile Responsive */
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about img {
+    width: 100%;
+  }
+
+  .skills {
+    justify-content: center;
+  }
+}
+
 </style>
 
    </head>
