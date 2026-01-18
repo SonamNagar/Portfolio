@@ -1103,6 +1103,85 @@ background: #0F172A;
 }
 
 
+
+/* Card Container */
+.cardnet{
+ height: 400px;
+  background-color: #0F172A;
+  color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+  transition: transform 0.3s, box-shadow 0.3s;
+
+  /* Updated Width */
+  width: 100%;             /* Mobile ke liye */
+  max-width: 420px;       /* Big screen pe thodi badi width */
+  margin: 20px auto;      /* Center align */
+}
+
+/* Hover effect */
+.cardnet:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.6);
+}
+
+/* Title */
+.cardnet .web{
+  text-align: center;
+  padding: 15px 10px 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+/* Image */
+.cardnet img{
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  max-height: 260px;      /* Image thodi badi */
+}
+
+/* Button Container */
+.projectthree{
+  text-align: center;
+  padding: 15px 0 20px;
+}
+
+/* Button Style */
+.sonaoo{
+ position: relative;
+ top:20px;
+  text-decoration: none;
+  color: #fff;
+  background: #e50914;
+  padding: 10px 25px;
+  border-radius: 5px;
+  transition: transform 0.3s, background 0.3s;
+}
+
+/* Button Hover */
+.sonaoo:hover{
+  background: #b00610;
+  transform: scale(1.05);
+}
+
+/* Mobile Styling */
+@media screen and (max-width: 480px){
+  .cardnet{
+    width: 98%;
+    max-width: none;
+  }
+
+  .cardnet .web{
+    font-size: 1.3rem;
+  }
+
+  .projectthree .sonaoo{
+    padding: 9px 20px;
+  }
+}
+
 </style>
 
    </head>
@@ -1161,6 +1240,10 @@ background: #0F172A;
            <button>JavaScript</button>
            <button>React Js</button>
   </div>
+
+
+
+
 
 
       </div>
@@ -1299,7 +1382,20 @@ background: #0F172A;
   </div>
    
  </div>
+
 </div> 
+
+ <div class="cardnet">
+         <h2 class="web">Netflix Clone</h2>
+<img src="https://cdn.playbackonline.ca/wp/wp-content/uploads/2020/05/Screen-Shot-2020-05-04-at-1.41.10-PM.png" alt="">
+         <div class="projectthree">
+     
+     <a href="index5.html" class="sonaoo">
+     View Project
+     </a>
+   </div>
+ </div>
+
 <h1>Contact Me</h1>
 
  <section id="contacto">
