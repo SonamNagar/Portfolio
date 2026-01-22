@@ -1432,13 +1432,13 @@ background: #0F172A;
     </div>
 
     <!-- Right Form -->
-    <form class="contacto-form">
+    <form class="contacto-form" onsubmit="return validateForm()">
       <h3>Contact Me</h3>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <input type="tel" placeholder="Your Phone Number">
-      <input type="text" placeholder="Subject">
-      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <input type="text" placeholder="Your Name"  id="name">
+      <input type="email" placeholder="Your Email"  id="email">
+      <input type="tel" placeholder="Your Phone Number" id="tel">
+      <input type="text" placeholder="Subject" id="subject">
+      <textarea rows="5" placeholder="Your Message"  id="message"></textarea>
       <button type="submit">Send Message</button>
     </form>
 
@@ -1470,7 +1470,7 @@ background: #0F172A;
 
 
 
-<script src="index2.js">
+<script>
   
 
 setInterval(() => {
@@ -1487,6 +1487,39 @@ setInterval(() => {
     let sonam = document.getElementById('sonam');
     sonam.classList.toggle('show');
 }, 2000);
+
+
+function validateForm(){
+  let name = document.getElementById('name').value;
+  let email = document.getElementById('email').value;
+  let tel = document.getElementById('tel').value;
+  let subject = document.getElementById('subject').value;
+  let message = document.getElementById('message').value;
+  if(name === ''){
+    alert('name cannot be empty')
+      return false;
+    }
+     if(email === ''){
+    alert('email cannot be empty')
+      return false;
+    }
+       if(tel === ''){
+    alert('telephone cannot be empty')
+      return false;
+    }
+      if(subject === ''){
+    alert('subject cannot be empty')
+      return false;
+    }
+      if(message === ''){
+    alert('message cannot be empty')
+      return false;
+    }
+    alert('Form submitted successfully')
+    return true;
+
+  }
+
 </script>
    </body>
    </html>
